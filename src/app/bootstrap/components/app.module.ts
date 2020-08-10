@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+
 // 1. Import the libs you need
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AppComponent } from './app.component';
+import { CropsListModule } from '../../common/crops-list/crops-list.module';
 
  const config = {
     apiKey: "AIzaSyAcrCgKORiwCPaywZ5l059QfnML90PNtRw",
@@ -25,12 +26,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
   imports:      [ 
     BrowserModule, 
     FormsModule, 
+    CropsListModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
     AngularFireStorageModule // storage 
     ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
