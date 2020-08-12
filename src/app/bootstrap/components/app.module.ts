@@ -10,6 +10,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppComponent } from './app.component';
 import { CropsListModule } from '../../common/crops-list/crops-list.module';
+import { SignupFormModule } from '../../common/signup-form/signup-form.module';
 
  const config = {
     apiKey: "AIzaSyAcrCgKORiwCPaywZ5l059QfnML90PNtRw",
@@ -27,6 +28,7 @@ import { CropsListModule } from '../../common/crops-list/crops-list.module';
     BrowserModule, 
     FormsModule, 
     CropsListModule,
+    SignupFormModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
