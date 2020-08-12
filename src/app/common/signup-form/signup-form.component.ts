@@ -7,5 +7,5 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['signup-form.component.css']
 })
 export class SignupFormComponent  { 
-  hide = true;
+  public hidePassword: boolean = true;
 }
