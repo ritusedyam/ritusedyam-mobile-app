@@ -8,6 +8,7 @@ import {MatIconRegistry} from '@angular/material/icon';
 @Component({
   selector: 'app-welcome',
   templateUrl: 'welcome.component.html',
+   styleUrls: [ 'welcome.component.css' ]
 })
 export class WelcomeComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {

@@ -1,0 +1,12 @@
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-content: center
+}
+
+.home__logo { 
+  width: 96px;
+  height: 96px;
+}
+
