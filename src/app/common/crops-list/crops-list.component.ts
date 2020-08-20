@@ -1,19 +1,20 @@
 import { Component, VERSION } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { ICrop } from './models/icrop-model';
 
 @Component({
   selector: 'crops-list',
   templateUrl: './crops-list.component.html'
 })
 export class CropsListComponent  {
-  public cropsCollection: Array<string> = [];
+  public cropsCollection: Array<ICrop> = [];
 
   constructor(private db: AngularFirestore) {
       const crops = db.collection("crops").valueChanges();
       crops.subscribe((cropsList) => {
-        cropsList.forEach((cropName) => {
-          this.cropsCollection.push(cropName["name"]);
-          console.log(cropName["name"]);
+        cropsList.forEach((crop) => {
+          this.cropsCollection.push({name: crop["name"], iconName: crop["cropName"]});
+          console.log(crop["name"]);
         })
       });
   }
