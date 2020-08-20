@@ -27,9 +27,10 @@ export class CropsListComponent {
         
         const iconUrl: string = `assets/icons/${crop["iconName"]}.svg`;
         console.log(iconUrl);
-         console.log(`${crop["iconName"]}.svg`);
+        console.log(`${crop["iconName"]}.svg`);
+
         iconRegistry.addSvgIcon(
-          `${crop["iconName"]}.svg`,
+          `${crop["iconName"]}`,
           sanitizer.bypassSecurityTrustResourceUrl(
             iconUrl
           )
