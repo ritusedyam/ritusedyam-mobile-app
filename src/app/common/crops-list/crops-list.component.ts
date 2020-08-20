@@ -6,7 +6,8 @@ import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: "crops-list",
-  templateUrl: "./crops-list.component.html"
+  templateUrl: "./crops-list.component.html",
+   styleUrls: [ './crops-list.component.css' ]
 })
 export class CropsListComponent {
   public cropsCollection: Array<ICrop> = [];
@@ -23,10 +24,12 @@ export class CropsListComponent {
           name: crop["name"],
           iconName: crop["iconName"]
         });
-        // console.log(crop["name"]);
-        const iconUrl: string = "assets/icons/" +  crop["iconName"];
+        
+        const iconUrl: string = `assets/icons/${crop["iconName"]}.svg`;
+        console.log(iconUrl);
+         console.log(`${crop["iconName"]}.svg`);
         iconRegistry.addSvgIcon(
-          crop["iconName"],
+          `${crop["iconName"]}.svg`,
           sanitizer.bypassSecurityTrustResourceUrl(
             iconUrl
           )
