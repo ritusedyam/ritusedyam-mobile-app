@@ -1,5 +1,7 @@
 <mat-chip-list [multiple]="true">
 	<mat-chip *ngFor="let crop of cropsCollection" [selectable]="true">
 		{{crop.name}}
+    <mat-icon [svgIcon]="crop.iconName">
+    </mat-icon>
 	</mat-chip>
 </mat-chip-list>

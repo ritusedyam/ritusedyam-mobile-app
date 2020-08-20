@@ -8,6 +8,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 
 import { CropsListComponent } from "./crops-list.component";
 import { MatChipsModule } from "@angular/material/chips";
+import { MatIconModule } from "@angular/material/icon";
+import { HttpClientModule } from "@angular/common/http";
 
 const config = {
   apiKey: "AIzaSyAcrCgKORiwCPaywZ5l059QfnML90PNtRw",
@@ -25,6 +27,8 @@ const config = {
     BrowserModule,
     FormsModule,
     MatChipsModule,
+    MatIconModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
