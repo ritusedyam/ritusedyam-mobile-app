@@ -13,6 +13,6 @@ export class WelcomeComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
         'ritusedyam',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ritusedyam.svg'));
+        sanitizer.bypassSecurityTrustResourceUrl('app/assets/icons/ritusedyam.svg'));
   }
 }
