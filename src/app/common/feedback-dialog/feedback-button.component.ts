@@ -15,6 +15,6 @@ export class FeedBackButtonComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
-    const dialogRef = this.dialog.open(FeedBackDialogComponent);
+    this.dialog.open(FeedBackDialogComponent);
   }
 }
