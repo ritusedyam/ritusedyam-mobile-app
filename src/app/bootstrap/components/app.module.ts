@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { CropsListModule } from '../../common/crops-list/crops-list.module';
 import { SignupFormModule } from '../../common/signup-form/signup-form.module';
 import { WelcomeModule } from '../../core/welcome/welcome.module';
+import { MatButtonModule } from '@angular/material/button';
+import { FeedBackDialogModule } from '../../common/feedback-dialog/feedback-dialog.module';
 
  const config = {
     apiKey: "AIzaSyAcrCgKORiwCPaywZ5l059QfnML90PNtRw",
@@ -30,7 +32,8 @@ import { WelcomeModule } from '../../core/welcome/welcome.module';
     FormsModule, 
     CropsListModule,
     SignupFormModule,
-    WelcomeModule,
+    WelcomeModule,   
+    FeedBackDialogModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
