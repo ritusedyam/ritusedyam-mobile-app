@@ -16,9 +16,5 @@ export class FeedBackButtonComponent {
 
   openDialog() {
     const dialogRef = this.dialog.open(FeedBackDialogComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
   }
 }

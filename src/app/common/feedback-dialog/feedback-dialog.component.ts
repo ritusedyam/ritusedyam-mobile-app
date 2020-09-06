@@ -13,7 +13,7 @@ import {MatIconRegistry} from '@angular/material/icon';
 export class FeedBackDialogComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
-        'ritusedyam',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ritusedyam.svg'));
+        'star',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/star.svg'));
   }
 }
