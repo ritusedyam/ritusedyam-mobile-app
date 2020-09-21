@@ -1,3 +1,8 @@
 p {
   font-family: Lato;
 }
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
