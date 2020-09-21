@@ -6,4 +6,8 @@
     display: flex;
     align-items: center;
   }
+
+  .temp:after {
+    content: "\00b0"
+}
 }
