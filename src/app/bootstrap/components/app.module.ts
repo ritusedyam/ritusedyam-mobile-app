@@ -14,6 +14,7 @@ import { SignupFormModule } from '../../common/signup-form/signup-form.module';
 import { WelcomeModule } from '../../core/welcome/welcome.module';
 import { MatButtonModule } from '@angular/material/button';
 import { FeedBackDialogModule } from '../../common/feedback-dialog/feedback-dialog.module';
+import { WeatherCardModule } from '../../common/weather-card/weather-card.module';
 
  const config = {
     apiKey: "AIzaSyAcrCgKORiwCPaywZ5l059QfnML90PNtRw",
@@ -34,6 +35,7 @@ import { FeedBackDialogModule } from '../../common/feedback-dialog/feedback-dial
     SignupFormModule,
     WelcomeModule,   
     FeedBackDialogModule,
+    WeatherCardModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth

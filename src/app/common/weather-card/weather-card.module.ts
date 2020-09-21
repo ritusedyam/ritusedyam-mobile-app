@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
 import { WeatherCardComponent } from "./weather-card.component";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   imports: [
@@ -16,9 +17,9 @@ import { WeatherCardComponent } from "./weather-card.component";
     MatIconModule,
     HttpClientModule,
     MatButtonModule,
-    MatDialogModule
+    MatCardModule
   ],
   declarations: [WeatherCardComponent],
   exports: [WeatherCardComponent]
 })
-export class FeatureCardModule {}
+export class WeatherCardModule {}
