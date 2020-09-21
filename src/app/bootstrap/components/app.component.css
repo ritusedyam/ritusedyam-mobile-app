@@ -6,3 +6,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
+.feature-card{
+  padding: 10px;
+}
