@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
 import { FeatureCardComponent } from "./feature-card.component";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { FeatureCardComponent } from "./feature-card.component";
     MatIconModule,
     HttpClientModule,
     MatButtonModule,
-    MatDialogModule
+    MatCardModule
   ],
   declarations: [FeatureCardComponent],
   exports: [FeatureCardComponent]

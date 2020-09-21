@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, Input,  VERSION } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
@@ -7,5 +7,5 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: [ './feature-card.component.scss' ]
 })
 export class FeatureCardComponent  {
-  name = 'Welcome to Ritusedyam';
+  @Input() public title: string;
 }
